@@ -1,10 +1,9 @@
-![Discord Logo](http://streamersquare.com/wp-content/uploads/2016/03/Discord-Community-Guide.png)
+scord Logo](http://streamersquare.com/wp-content/uploads/2016/03/Discord-Community-Guide.png)
 
 **Official Discord client in docker container (for X11 server with GUI)**
 ===
 
-This repository has multi architecture support and is regularly updated.    
-Container is built for amd64, arm and arm64.
+Discord provides only an amd64 architecture version, so this docker images is only for amd64 systems as well.   
 
 Versions in the latest image
 -----
