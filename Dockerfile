@@ -9,9 +9,11 @@ RUN 	apt-get update \
 	&& dpkg -i /tmp/discord.deb \
 	&& apt-get purge --auto-remove -y wget \
 	&& apt-get clean && rm -rf /tmp/* && rm -rf /var/lib/apt/lists/* \
-	&& useradd -r -m -G audio,video discord
+	&& useradd -r -m -u 1000 -G audio,video discord
 
-COPY asound.conf /etc/asound.conf
+## maybe you need to setup this alsa config for your needs ...
+#COPY asound.conf /etc/asound.conf
+
 COPY entrypoint.sh /home/discord/
 
 USER discord
